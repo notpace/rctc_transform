@@ -1,0 +1,25 @@
+{
+  "name": "rctc_transform",
+  "version": "0.1.0",
+  "description": "A command-line tool that transforms an RCTC excel file into xml and json representations",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "rctc",
+    "trigger_codes",
+    "public_health",
+    "health"
+  ],
+  "author": "Pace Ricciardelli",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "js2xmlparser": "^3.0.0",
+    "xlsx": "^0.9.10"
+  },
+  "bin": {
+    "rctc_transform": "./index.js"
+  }
+}

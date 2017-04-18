@@ -1,0 +1,43 @@
+{
+  "name": "Reportable Condition Trigger Codes (RCTC)",
+  "purpose": "Triggers for initiating decision support for electronic case report",
+  "rctc_oid": "2.16.840.1.114222.4.11.7508",
+  "rctc_definition_version": /* "Worksheet: Value Sets, Cell: B5" */,
+  "effective_start_date": /* "Worksheet: Value Sets, Cell: B6" */,
+  "code_systems": [ /* "Look for 'Code Systems', set x as this row + 2" */
+    { "name": /* "Cell: Ax" */, "version": /* "Cell: Bx" */, "oid": /* "Cell: Cx" */ }
+    /* "x += 1" */
+    /* "Loop until cell Ax is empty" */
+  ],
+  "value_set_list": [
+    /* "Repeat for each worksheet other than 'Readme' and 'Value Sets':" */
+    {
+      "name": /* "Cell: B2" */,
+      "oid": /* "Cell: B3" */,
+      "type": /* "Cell: B4" */,
+      "definition_version": /* "Cell: B5" */,
+      "steward": "CSTE Steward",
+      "author": "CSTE Author",
+      "purpose_clinical_focus": /* "Cell: B8" */,
+      "purpose_data_element_scope": /* "Cell: B9" */,
+      "purpose_inclusion_criteria": /* "Cell: B10" */,
+      "purpose_exclusion_criteria": /* "Cell: B11" */,
+      "note": /* "Cell: B12" */,
+      "code_systems": [ /* "Take Cell B13 and parse it out into an array" */
+        "ICD10CM","SNOMEDCT"
+      ],
+      "updated": "2017-03-21", /* "Get from the 'Value Sets' tab somehow " */
+      "status": "Published", /* "Get from the 'Value Sets' tab somehow " */
+      "grouping_list": [ /* "Look for 'Grouping List', set x as this row + 2" */
+        { "name": /* "Cell: Ax" */, "oid": /* "Cell: Bx" */, "code_system": /* "Cell: Cx" */, "code_system_oid": /* "Cell: Dx" */ }
+        /* "x += 1" */
+        /* "Loop until cell Ax is empty" */
+      ],
+      "code_list": [ /* "Look for 'Code List', set x as this row + 2" */
+        { "code": /* "Cell: Ax" */, "descriptor": /* "Cell: Bx" */, "code_system": /* "Cell: Cx" */, "version": /* "Cell: Dx" */, "status": /* "Cell: Ex" */, "remap_info": /* "Cell: Fx" */ },
+        /* "x += 1" */
+        /* "Loop until cell Ax is empty" */
+      ]
+    }
+  ]
+}
